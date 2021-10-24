@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap-files/bootstrap-5.1.1-dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light" style="margin: 0px;">
+
+
+    <header class=" d-flex flex-wrap justify-content-spacearound py-3   bg-dark text-white">
+     
+        <a href="#" class="  d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none text-white ">
+  
+          <h4 class="mt-4" style="font-family: 'Source Sans Pro', sans-serif;"> Conf Bs Af</h4>
+        </a>
+  
+        <ul class="   nav nav-pills mt-4 ">
+  
+          <li class="nav-item mr-1em">
+            <a href="#" class="nav-link text-white text-decoration-none">La conferencia</a>
+          </li>
+          <li class="nav-item">
+            <a  href="#" class="nav-link text-secondary text-decoration-none">Los oradores</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-secondary text-decoration-none">El lugar y la fecha</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-secondary text-decoration-none nav-link">Conviertete en orador</a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-success text-decoration-none">Comprar tickets</a>
+          </li>
+  
+        </ul>
+      </header>
+
+    <main>
+
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-md-3 my-4    text-center">
+
+              <div class="col">
+                <div class="card mb-5 mb-md-0  rounded-3 shadow-sm border-success">
+
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal"> Estudiante</h4>
+                </div>
+
+                <div class="card-body ">
+
+                    <p class="card-text display-6" style="font-size: 2em;">Tiene un descuento</p>
+
+                    <h1 class="card-title pricing-card-title" id="Estuiante"> 80%</h1>
+
+                    <p class="my-3 mb-4 text-muted">*Presentar documentacion.</p>
+                </div>
+                
+                </div>
+              </div>
+
+                <div class="col">
+
+                    <div class=" card  mb-5 mb-md-0 rounded-3 shadow-sm border-primary">
+
+                        <div class="card-header  py-3">
+                            <h4 class="my-0 fw-normal">Trainer</h4>                            
+                        </div>
+
+                        <div class="card-body ">
+
+                            <p class="card-text display-6" style="font-size: 2em;"> Tiene un descuento de</p>
+
+                            <h1 class=" card-title pricing-card-title" id="Trainer">50%</h1>
+
+                            <p class="my-3 mb-4 text-muted">*Presentar documentacion.</p>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="col">
+
+                    <div class="card  mb-4 mb-md-0 rounded-3 shadow-sm border-warning">
+                        <div class="card-header py-3">
+
+                            <h4 class="my-0 fw-normal"> Junior</h4>
+
+                        </div>
+                    
+
+                      <div class="card-body">
+
+                        <p class=" card-text display-6" style="font-size: 2em;">Tiene un descuento:</p>
+
+                        <h1 class=" card-title pricing-card-title" id="Junior">15%</h1>
+
+                        <p class="my-3 mb-4 text-muted">*Presentar documentacion.</p>
+
+                      </div>
+                  
+                    </div>
+                </div> 
+            </div>
+        
+        </div>
+
+
+        <div class="container"> <!--Texto inutil-->
+
+                <div class="row my-4  text-center ">
+                    <div class="separacion">
+                        <h5 class="fw-normal text-dark" >
+                            Valor
+                        </h5>
+                    </div>
+
+                </div>
+
+                <div class="row text-center">
+
+                    <div class="precio">
+                        <h1>
+                            Valor del Ticket 200$
+                        </h1>
+                    </div>
+
+                </div>
+
+        </div>
+
+        <div class="container">
+            <form name="lista" id="lista">
+                <div class="row g-3 my-5">
+
+                    <div class="col "> 
+                        <input type="text" class="form-control mb-3" placeholder="Nombre" >
+                    </div>
+                    <div class="col ">
+
+                        <input type="text" class="form-control mb-3" placeholder="Apellido">
+
+                    </div>
+
+                    <div class="col-12">
+                        <input type="text" class="form-control mb-3" placeholder="Correo">
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <label >cantidad</label>
+                        <input type="text" class="form-control" name="cantidad" id="cantidad">
+                    </div>
+                    <div class="col-12 col-md-6 mb-4">
+                        <label > Categoria</label>
+                        <select id="categoria" name="categoria" class="form-select">
+                            <option selected>Cual eres...</option>
+                            <option value="1">Estudiante</option>
+                            <option value="2">Trainer</option>
+                            <option value="3">Junior</option>
+                        </select>
+                    </div>
+
+                  <div class="col-12 mb-3 mt-3 " style="border-radius: 0.5,; background-color: rgba(153, 185, 223, 0.781);">
+
+                    <h5 class="mt-3 mb-3 fw-normal text-primary "> Total a pagar: <samp id="Preciofinal" style="color: green;"></samp> $<h5> 
+ 
+                  </div>
+
+                  <div class="col mb-4"><button type="reset" class="btn btn-success btn-large w-100">Borrar</button></div>
+                  
+                  <div class="col mb-4"><button type="button" onclick="precio();"  class="btn btn-success w-100">Resumen</button></div>
+               </div>
+
+            </form>
+
+
+
+            
+               
+        </div>
+
+    </main>
+
+
+
+    <div class="container-fluid mt-5" style="background-color: #252e3f;">
+        <footer class=>
+          <ul class="nav  list-unstyled mt-4  p-4 " style="background-color: #121324; justify-content: space-between;">
+            <li> <a href="#" class="text-decoration-none text-light  m-2 col-12 col-md-2 ">Preguntas frecuentes</a></li>
+            <li> <a href="#" class="text-decoration-none text-light  m-2  col-sm-12 col-md-2">Contactanos</a></li>
+            <li> <a href="#" class="text-decoration-none text-light  m-2  col-12 col-md-2">Prensa</a></li>
+            <li> <a href="#" class="text-decoration-none text-light  m-2  col-12 col-md-2">Conferencia</a></li>
+            <li> <a href="#" class="text-decoration-none text-light  m-3  col-12 col-md-2">Terminos y condiciones</a></li>
+            <li> <a href="#" class="text-decoration-none text-light  m-2  col-12 col-md-2">Privacidad</a></li>
+            <li> <a href="#" class="text-decoration-none text-light  m-2  col-12 col-md-2">Estudiantes</a></li>
+          </ul>
+        </footer>
+
+      </div>
+
+    <script src="./result.js"></script>
+    <script src="./Bootstrap-files/bootstrap-5.1.1-dist/js/bootstrap.min.js"></script>
+</body>
+
+
+</html>
+
